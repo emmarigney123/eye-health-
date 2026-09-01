@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eye Health Assessment</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="main-site-header">
+        <a class="main-brand" href="index.html">Eye Health</a>
+        <nav class="main-site-nav" aria-label="Main navigation">
+            <a class="active" href="index.html">Assessments</a>
+            <a href="library.html">Eye Health Library</a>
+        </nav>
+    </header>
+
+
+    <main class="assessment-container">
+
+        <!-- TEST SELECTION SCREEN -->
+        <section id="selectionScreen">
+
+            <div class="home-hero">
+                <div class="home-hero-copy">
+                    <div class="hero-orb hero-orb-one"></div>
+                    <div class="hero-orb hero-orb-two"></div>
+                    <p class="eyebrow">UNDERSTAND YOUR VISION • LEARN YOUR EYE HEALTH</p>
+
+                    <h1>Take a Closer Look at Your Eye Health</h1>
+
+                    <p class="intro home-hero-intro">
+                        Explore your vision from three different angles: how clearly
+                        you see today, symptoms you may be noticing, and factors that
+                        may matter to your eye health over time.
+                    </p>
+
+                    <div class="home-hero-points">
+                        <span>3 guided assessments</span>
+                        <span>Eye-by-eye screening</span>
+                        <span>Detailed eye-health library</span>
+                    </div>
+                </div>
+
+                <div class="home-hero-note">
+                    <p class="eyebrow">START WHERE YOU ARE</p>
+                    <h2>Not sure which assessment to choose?</h2>
+                    <p>
+                        Use <strong>Vision Test</strong> for clarity and visual screening,
+                        <strong>Symptom Analysis</strong> for something you are currently
+                        noticing, or <strong>Future Eye Health</strong> for history, habits,
+                        and long-term monitoring priorities.
+                    </p>
+                </div>
+            </div>
+
+
+            <section class="home-section">
+                <div class="home-section-heading">
+                    <p class="eyebrow">CHOOSE AN ASSESSMENT</p>
+                    <h2>Three different ways to learn about your eyes</h2>
+                    <p>
+                        Each assessment looks at a different part of eye health.
+                        You can take one or complete all three.
+                    </p>
+                </div>
+
+                <div class="test-options">
+
+                    <button class="test-card enhanced-test-card" onclick="startTest('vision')">
+                        <div class="test-card-number">01</div>
+                        <h2>Vision Test</h2>
+
+                        <p>
+                            Complete a guided at-home vision screening and compare
+                            how each eye performs.
+                        </p>
+
+                        <ul>
+                            <li>Corrected and unaided distance vision</li>
+                            <li>Right eye, left eye, and both eyes</li>
+                            <li>Near vision and central distortion checks</li>
+                            <li>Color-vision screening</li>
+                        </ul>
+
+                        <span>Start Vision Test →</span>
+                    </button>
+
+
+                    <button class="test-card enhanced-test-card" onclick="startTest('symptom')">
+                        <div class="test-card-number">02</div>
+                        <h2>Symptom Analysis</h2>
+
+                        <p>
+                            Describe what you are noticing and see which eye
+                            conditions may share similar features.
+                        </p>
+
+                        <ul>
+                            <li>Adaptive symptom questions</li>
+                            <li>Right- and left-eye differences</li>
+                            <li>Possible condition matches</li>
+                            <li>Urgency and next-step guidance</li>
+                        </ul>
+
+                        <span>Start Symptom Analysis →</span>
+                    </button>
+
+
+                    <button class="test-card enhanced-test-card" onclick="startTest('future')">
+                        <div class="test-card-number">03</div>
+                        <h2>Future Eye Health</h2>
+
+                        <p>
+                            Explore the history, habits, exposures, and known
+                            findings that may be worth monitoring over time.
+                        </p>
+
+                        <ul>
+                            <li>Family and personal eye history</li>
+                            <li>Contact-lens and UV habits</li>
+                            <li>Medical and medication factors</li>
+                            <li>Personalized monitoring priorities</li>
+                        </ul>
+
+                        <span>Start Future Eye Health →</span>
+                    </button>
+
+                </div>
+            </section>
+
+
+            <section class="home-info-grid">
+                <div class="home-info-card">
+                    <p class="eyebrow">HOW IT WORKS</p>
+                    <h2>Answer → Compare → Learn</h2>
+                    <p>
+                        The assessments organize the information you provide into
+                        understandable patterns. Results explain what contributed
+                        to each finding instead of giving you an unexplained score.
+                    </p>
+                </div>
+
+                <div class="home-info-card">
+                    <p class="eyebrow">BUILT AROUND BOTH EYES</p>
+                    <h2>Your eyes do not always behave the same way</h2>
+                    <p>
+                        When it matters, the assessments separate the right eye
+                        (OD), left eye (OS), and both eyes together (OU) so important
+                        differences are not lost in one general answer.
+                    </p>
+                </div>
+
+                <div class="home-info-card">
+                    <p class="eyebrow">EDUCATIONAL, NOT DIAGNOSTIC</p>
+                    <h2>A starting point for better questions</h2>
+                    <p>
+                        These tools can help you notice patterns and understand eye
+                        health terminology, but they cannot examine the retina,
+                        optic nerve, cornea, eye pressure, or replace professional care.
+                    </p>
+                </div>
+            </section>
+
+
+            <section class="home-section home-learn-section">
+                <div class="home-section-heading">
+                    <p class="eyebrow">WHY EYE HEALTH MATTERS</p>
+                    <h2>Vision is more than reading an eye chart</h2>
+                    <p>
+                        Clear vision depends on the cornea, lens, retina, optic nerve,
+                        eye movements, tear system, and brain working together. Some
+                        eye conditions cause noticeable symptoms, while others may
+                        change quietly and are found during an eye examination.
+                    </p>
+                </div>
+
+                <div class="home-mini-grid">
+                    <div>
+                        <strong>Clarity</strong>
+                        <p>How sharply each eye sees at distance and near.</p>
+                    </div>
+                    <div>
+                        <strong>Comfort</strong>
+                        <p>Dryness, strain, focusing, and how the eyes work together.</p>
+                    </div>
+                    <div>
+                        <strong>Eye health</strong>
+                        <p>The condition of structures such as the cornea, lens, retina, and optic nerve.</p>
+                    </div>
+                    <div>
+                        <strong>Prevention & monitoring</strong>
+                        <p>Understanding history and habits that may influence future eye-care needs.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="library-access-card expanded-library-card">
+                <div>
+                    <p class="eyebrow">EYE HEALTH LIBRARY</p>
+                    <h2>Go deeper into the conditions and topics you see in your results</h2>
+                    <p>
+                        Browse the Eye Health Library for information about symptoms,
+                        causes, risk factors, examinations, treatments, related
+                        conditions, and when professional care may be important.
+                    </p>
+                </div>
+
+                <a class="library-access-button" href="library.html">
+                    Explore Eye Health Library →
+                </a>
+            </div>
+
+
+            <section class="home-safety-note">
+                <p class="eyebrow">IMPORTANT</p>
+                <h2>Some eye changes should not wait for an online assessment</h2>
+                <p>
+                    Sudden vision loss, a new curtain or missing area of vision,
+                    severe eye pain, major eye trauma, chemical exposure, or new
+                    neurologic-type vision symptoms need prompt professional evaluation.
+                </p>
+            </section>
+
+            <p class="disclaimer home-disclaimer">
+                These assessments are educational screening tools. They do not
+                provide a medical diagnosis, prescribe treatment, or replace a
+                comprehensive examination by an eye-care professional.
+            </p>
+
+        </section>
+
+
+
+        <!-- TEST SCREEN -->
+        <section id="testScreen" class="hidden">
+
+            <button class="back-button" onclick="returnHome()">
+                ← Back to Assessments
+            </button>
+
+
+            <div class="progress-area">
+
+                <div class="progress-information">
+
+                    <span id="testName"></span>
+
+                    <span id="questionCounter"></span>
+
+                </div>
+
+
+                <div class="progress-track">
+
+                    <div id="progressBar"></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="question-area">
+
+                <p id="questionCategory" class="eyebrow"></p>
+
+                <h1 id="questionText"></h1>
+
+                <p id="questionExplanation" class="question-explanation"></p>
+
+
+                <div id="answerChoices" class="answer-choices"></div>
+
+
+                <div class="navigation">
+
+                    <button
+                        id="previousButton"
+                        class="secondary-button"
+                        onclick="previousQuestion()"
+                    >
+                        Previous
+                    </button>
+
+
+                    <button
+                        id="nextButton"
+                        class="primary-button"
+                        onclick="nextQuestion()"
+                        disabled
+                    >
+                        Next
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- COMPLETION SCREEN -->
+        <section id="completionScreen" class="hidden">
+
+            <p class="eyebrow">ASSESSMENT COMPLETE</p>
+
+            <h1>Your answers have been recorded.</h1>
+
+            <p class="intro">
+                Eventually, this is where your personalized eye-health
+                results will appear.
+            </p>
+
+
+            <div id="answerSummary"></div>
+
+
+            <button
+                class="primary-button"
+                onclick="returnHome()"
+            >
+                Return to Assessments
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
